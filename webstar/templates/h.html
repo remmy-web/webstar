@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Home page</title>{% endblock  %}
+</head>
+<body>
+    <div>
+        {% include 'header.html' %}
+    </div>
+    {% block content %}
+    <div>
+        <div id="picture" class="col-12 intro" style="background-image: url('{{ pictures}}'); height: 500px; background-size: cover;display: flex; justify-content: center; align-items: center;">
+            <h1 style="text-align: center; line-height: 800px; margin: 0; color: beige;font-size: 65px;">WEBSTAR INTERNATIONAL</h1>
+        </div>
+    </div>
+    {% endblock %}
+    
+    <!--footer-->
+    <div>
+    {% include 'footer.html' %}   
+    </div>
+
+    <script>
+        // An array of picture URLs
+        var pictures = {{ pictures|safe }};
+        
+        var index = 0;
+        var picture = document.getElementById("picture");
+        
+        function changePicture() {
+            picture.style.backgroundImage = "url('" + pictures[index] + "')";
+            /*picture.src = pictures[index];*/
+            index = (index + 1) % pictures.length;
+        }
+        
+        changePicture();
+        setInterval(changePicture, 5000);
+    </script>
+</body>
+</html>

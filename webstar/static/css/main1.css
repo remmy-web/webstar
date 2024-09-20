@@ -1,0 +1,23 @@
+.footer_col{
+   padding: 2px;
+   display: inline-block;
+   margin-bottom: 0px;
+}
+.row{
+    background-color: black;
+    color: white;
+    display: flex; 
+
+
+}
+#webstar_footer{
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+#footer_content{
+    padding-left: 1cm;
+}
+
+.social-footer2{
+    display: inline-flexbox;
+    padding-left: 1.3cm;
+}

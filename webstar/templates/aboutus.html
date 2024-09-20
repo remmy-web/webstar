@@ -1,0 +1,40 @@
+{% extends 'h.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>About Us</title>{% endblock %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    {% block content %}
+    <h3>About Us</h3>
+    <div class="row" style="padding: 5px; text-align: justify;">
+        <div class="col-12" style="padding-left: 5cm; padding-right: 5cm;">
+          <div class="indent">
+            <div class="indent1">
+              <h3>About Your Website</h3>
+              <p class="p0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+            </div>
+            <h4>About Your Team</h4>
+            <ul class="list1">
+            <p><img style="border-radius: 10cm; height:3cm; width: 3cm; align-items: flex-start;padding-right: 5px;" src="{% static 'images/hackathon.jpg' %}" alt="" /><strong><a href="#">Mr. Yiga Remegious </a>
+            </strong>Team Director. Student of agriculture at Makerere University with a great persion for computer and information technology.</p>
+            </ul>
+          </div>
+          <ul>
+            <li><strong><a href="#">February 15, 2010</a></strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
+            <li><strong><a href="#">January 31, 2010</a></strong>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</li>
+            <li><strong><a href="#">January 22, 2010</a></strong>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugitd quia.</li>
+            <li><strong><a href="#">January 14, 2010</a></strong>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</li>
+          </ul>
+        </div>      
+            
+         
+    {% endblock %}
+    
+</body>
+</html>
