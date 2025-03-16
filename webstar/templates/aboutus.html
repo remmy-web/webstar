@@ -11,30 +11,33 @@
 </head>
 <body>
     {% block content %}
-    <h3>About Us</h3>
+    <h3>About</h3>
     <div class="row" style="padding: 5px; text-align: justify;">
         <div class="col-12" style="padding-left: 5cm; padding-right: 5cm;">
-          <div class="indent">
-            <div class="indent1">
-              <h3>About Your Website</h3>
-              <p class="p0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+            <div class="indent">
+                <div class="indent1">
+                    <h3>About this site</h3>
+                    <p class="p0">Welcome to my digital space, dedicated to innovation in agriculture through technology. This site showcases my projects, skills, and passions in the field of soil data analysis, crop nutrition, and environmental health. Here, I share my experiences and results obtained in developing software solutions, such as the SADAMS soil analysis data management system, and in applying machine learning and data analysis techniques to improve agricultural practices.</p>
+                </div>
+                <h4>Our Team</h4>
+                <ul class="list1">
+                    <p>
+                        <img style="border-radius: 10cm; height:3cm; width: 3cm; align-items: flex-start;padding-right: 5px;" src="{% static 'images/hackathon.jpg' %}" alt="Yiga Remegious" />
+                        <strong><a href="#">Mr. Yiga Remegious</a></strong> - Team Director.
+                        Student of Agricultural Science at Makerere University, with a strong passion for computer and information technology.
+                        Django developer, expert in machine learning and data analysis, with a particular focus on soil health, environment, crop nutrition, and animal nutrition.
+                        Creator of the SADAMS soil analysis data management system and active participant in numerous hackathons.
+                        Using Python as the primary programming language.
+                    </p>
+                </ul>
             </div>
-            <h4>About Your Team</h4>
-            <ul class="list1">
-            <p><img style="border-radius: 10cm; height:3cm; width: 3cm; align-items: flex-start;padding-right: 5px;" src="{% static 'images/hackathon.jpg' %}" alt="" /><strong><a href="#">Mr. Yiga Remegious </a>
-            </strong>Team Director. Student of agriculture at Makerere University with a great persion for computer and information technology.</p>
+            <ul>
+                <li><strong><a href="#">Hackathon Experience</a></strong> - Active participation in various hackathons, refining programming and software development skills.</li>
+                <li><strong><a href="#">SADAMS Development</a></strong> - Conception and development of the SADAMS soil analysis data management system, to improve efficiency and accuracy in Laboratoty soil data analysis and Managements.</li>
+                <li><strong><a href="#">Python Skills</a></strong> - Strong proficiency in Python, used for developing web applications with Django, data analysis, and machine learning.</li>
+                <li><strong><a href="#">Agriculture Focus</a></strong> - Passion for agriculture, with a particular interest in soil health, the environment, crop and animal nutrition.</li>
             </ul>
-          </div>
-          <ul>
-            <li><strong><a href="#">February 15, 2010</a></strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
-            <li><strong><a href="#">January 31, 2010</a></strong>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</li>
-            <li><strong><a href="#">January 22, 2010</a></strong>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugitd quia.</li>
-            <li><strong><a href="#">January 14, 2010</a></strong>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</li>
-          </ul>
-        </div>      
-            
-         
+        </div>
     {% endblock %}
-    
 </body>
 </html>
