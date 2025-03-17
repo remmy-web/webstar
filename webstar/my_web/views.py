@@ -11,18 +11,9 @@ def homepage(request):
     context={'pictures':pictures}
     return render(request, 'h.html', context)
 
-
 def aboutus(request):
     context={}
     return render(request, 'aboutus.html', context)
 
-def product(request):
-    context={}
-    return render(request, "product.html", context)
-
-#view function to desplay details about each product.
-def product_view(request):
-    context={}
-    return render(request, 'product_view.html', context)
 
 
